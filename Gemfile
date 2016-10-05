@@ -42,6 +42,13 @@ group :development, :test do
 
   # schemaをmodelに書き出してくれる
   gem 'annotate'
+
+  # Capistrano設定
+  gem 'capistrano', '3.4.0'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano3-unicorn'
 end
 
 group :development do
