@@ -11,7 +11,7 @@ set :repo_url, ENV['REPO_URL']
 set :branch, 'master'
 
 # deploy先のディレクトリ構造に合わせて記載する
-set :deploy_to, '/var/www/kokne'
+set :deploy_to, '/var/www/koken'
 
 # シンボリックリンクを貼るファイル一式をハッシュ形式で記載する
 set :linked_files, %w{ config/database.yml config/secrets.yml .env }

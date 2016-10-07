@@ -1,5 +1,5 @@
-server ENV ['IP_ADDRESS'], user: ENV [' USER_ NAME'], roles: %w{app db web}
-set :ssh_options, keys: "~/.ssh/#{ENV [' KEY_NAME']}" 
+server ENV['IP_ADDRESS'], user: ENV['USER_NAME'], roles: %w{app db web}
+set :ssh_options, keys: "~/.ssh/#{ENV['KEY_NAME']}"
 
 # server-based syntax
 # ======================
