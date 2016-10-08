@@ -92,3 +92,8 @@ desc 'upload importabt files'
       upload!('.env', "#{shared_path}/.env")
   end
 end
+
+set :default_environment, {
+  'RBENV_ROOT' => '$HOME/.rbenv',
+  'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+}
