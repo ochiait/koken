@@ -24,6 +24,8 @@ set :keep_releases, 5
 
 # rubyのバージョンの指定
 set :rbenv_ruby, '2.3.1'
+set :rbenv_path, '/usr/local/rbenv'
+set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 
 #出力するログのレベル
 set :log_level, :debug
@@ -94,6 +96,6 @@ desc 'upload importabt files'
 end
 
 set :default_environment, {
-  'RBENV_ROOT' => '$HOME/.rbenv',
-  'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+  'RBENV_ROOT' => '/usr/local/rbenv',
+  'PATH' => "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH"
 }
